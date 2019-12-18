@@ -14,7 +14,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 bootJar {
-    baseName = 'springboot-jpa-hana'
+    archiveBaseName = 'springboot-jpa-hana'
     version =  '0.1.0'
 }
 
@@ -34,6 +34,12 @@ dependencies {
     // tag::actuator[]
     compile("org.springframework.boot:spring-boot-starter-actuator")
     // end::actuator[]
+    // tag::swagger[]
+    compile("io.springfox:springfox-swagger2:2.9.2")
+    compile("io.springfox:springfox-swagger-ui:2.9.2")
+    // https://github.com/swagger-api/swagger-core/issues/2783
+    compile("io.swagger:swagger-models:1.6.0")
+    // end::swagger[]
     // tag::tests[]
     testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile("com.h2database:h2")
