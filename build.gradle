@@ -35,8 +35,8 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-actuator")
     // end::actuator[]
     // tag::swagger[]
-    compile("io.springfox:springfox-swagger2:2.9.2")
-    compile("io.springfox:springfox-swagger-ui:2.9.2")
+    compile("io.springfox:springfox-swagger2:3.0.0")
+    compile("io.springfox:springfox-swagger-ui:3.0.0")
     // https://github.com/swagger-api/swagger-core/issues/2783
     compile("io.swagger:swagger-models:1.6.0")
     // end::swagger[]
