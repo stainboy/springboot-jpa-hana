@@ -1,4 +1,4 @@
-FROM gradle:6.0-jdk8 as builder
+FROM gradle:7.4-jdk8 as builder
 WORKDIR /workspace
 COPY / /workspace/
 RUN gradle build
